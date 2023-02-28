@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'HankenGrotesk';
+    src: url(../assets/fonts/HankenGrotesk-VariableFont_wght.ttf);
+}
+
+:root {
+    /*Primary Colors*/
+
+ --Light-red: hsl(0, 100%, 67%);
+ --Orangey-yellow: hsl(39, 100%, 56%);
+ --Green-teal: hsl(166, 100%, 37%);
+ --Cobalt-blue: hsl(234, 85%, 45%);
+
+
+   /*Gradients*/
+
+ --Light-slate-blue-background: hsl(252, 100%, 67%);
+ --Light-royal-blue-background: hsl(241, 81%, 54%);
+
+ --Violet-blue-circle: hsla(256, 72%, 46%, 1);
+ --Persian-blue-circle: hsla(241, 72%, 46%, 0);
+
+ --background: linear-gradient(var(--Light-slate-blue-background), var(--Cobalt-blue));
+
+  /* Neuteral*/
+
+ --White: hsl(0, 0%, 100%);
+ --Pale-blue: hsl(221, 100%, 96%);
+ --Light-lavender: hsl(241, 100%, 89%);
+ --Dark-gray-blue: hsl(224, 30%, 27%);
+
+}
+body {
+    font-family: 'HankenGrotesk';
+    background-color: var(--Pale-blue);
+}
+
+p {
+    font-size: 1rem;
+    color: var(--Pale-blue);
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100px;
+}
+
+.main-container{
+
+    position: absolute;
+    width: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--White);
+
+}
+
+.cards-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    border-radius: 20px;
+}
+
+.card1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    border-radius: 30px;
+    background: var(--background);
+    
+}
+
+.card2 {
+    display: flex;
+    flex-flow: column;
+    gap: 0.8rem;
+    text-align: center;
+}
+
+.results {
+    display: grid;
+    justify-content: center;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--Cobalt-blue);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 10px, 10px, 80px;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--White);
+}
+
+.result-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--Pale-blue);
+}
+
+.sub-result {
+    margin-top: -50px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--Pale-blue);
+
+}
+
+.sub-title {
+    color: var(--White);
+}
+
+.summary {
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--Dark-gray-blue);
+}
+
+.continue {
+    padding: 20px;
+    font-size: 1rem;
+    font-weight: 700;
+    background: var(--background);
+    color: var(--White);
+    border-radius: 30px;
+    border: none;
+    justify-content: center;
+}
+.continue :hover{
+    background: var(--Dark-gray-blue);
+    cursor: pointer;
+    position: relative;
+}
