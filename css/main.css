@@ -21,7 +21,7 @@
 
   --background: linear-gradient(
     var(--Light-slate-blue-background),
-    var(--Cobalt-blue)
+    var(--Light-royal-blue-background)
   );
 
   /* Neuteral*/
@@ -41,7 +41,8 @@ body {
 
 img,
 svg {
-  display: block;
+  display: inline;
+  position: relative;
   max-width: 100%;
 }
 
@@ -60,33 +61,36 @@ svg {
   gap: 1.5rem;
   background-color: var(--White);
   box-shadow: 20px 20px 50px var(--Pale-blue);
+  border-radius: 30px;
 }
 
 .card1 {
-  display: grid;
+  display: flex;
+  flex-flow: column;
   gap: 1.5rem;
   border-radius: 30px;
   background: var(--background);
-  /* text-align: center; */
-  /* justify-content: center; */
   place-items: center;
 }
 
+.card2 {
+  display: flex;
+  flex-flow: column;
+  flex: 1;
+  gap: 1rem;
+  background-color: var(--White);
+  border-radius: 30px;
+}
+
 .result-main {
-  background-color: var(--Cobalt-blue);
+  background-color: var(--Light-royal-blue-background);
   display: grid;
   place-content: center;
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  box-shadow: 5px 5px 30px var(--Cobalt-blue);
+  box-shadow: 1px 1px 100px var(--Cobalt-blue);
 }
-
-/*.card1 p .text-bold {
-  font-size: 3rem;
-  font-weight: 800;
-  color: var(--White);
-}*/
 
 .text-xl {
   font-size: 4rem;
@@ -108,15 +112,7 @@ svg {
   font-weight: 500;
 }
 
-.card2 {
-  display: flex;
-  flex-flow: column;
-  gap: 0.8rem;
-  text-align: center;
-  border-radius: 30%;
-}
-
-.results {
+.results-main {
   display: flex;
   justify-content: center;
   padding: 0.5rem 1.5rem;
@@ -127,11 +123,11 @@ svg {
   font-size: 3rem;
   font-weight: 700;
   color: var(--White);
-  box-shadow: 10px 20px 50px var(--Cobalt-blue);
+  box-shadow: inset -0px -0px -10px var(--Cobalt-blue);
 }
 
 .result-title {
-  margin-bottom: -2px;
+  margin-bottom: -5px;
   font-size: 1.3rem;
   font-weight: 700;
   color: var(--Pale-blue);
@@ -139,6 +135,7 @@ svg {
 
 
 .sub-title {
+  margin-top: 10px;
   font-weight: 700;
   text-align: center;
   color: var(--White);
@@ -146,11 +143,13 @@ svg {
 
 .sub-text {
   font-weight: 500;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
   color: var(--Pale-blue);
+  text-align: center;
 }
 
 .summary {
+  position: relative;
   text-align: left;
   font-size: 1.5rem;
   font-weight: 700;
@@ -159,14 +158,15 @@ svg {
 }
 
 .continue {
-  padding: 20px;
+  padding: 1.5rem;
   font-size: 1rem;
   font-weight: 700;
+  margin: 2rem;
   background: var(--Dark-gray-blue);
   color: var(--White);
   border-radius: 40px;
   border: none;
-  align-items: center;
+  text-align: center;
 }
 
 .continue:hover {
@@ -174,15 +174,8 @@ svg {
   cursor: pointer;
 }
 
-.reaction .memory .verbal .visual {
-  border-radius: 10px;
-  padding: 1rem;
-  font-weight: 500;
-  justify-content: space-between;
-}
-
 .scores {
-  padding-left: 30%;
+  padding-left: 20%;
   font-weight: 700;
   color: var(--Dark-gray-blue);
 }
@@ -190,33 +183,41 @@ svg {
 .score-fade {
   font-weight: 700;
   color: var(--Light-lavender);
-  padding-right: 10%;
+  padding-right: 20%;
 }
 
 .reaction {
+  padding: 10px;
   background-color: hsl(0, 100%, 67%, 0.06);
   border-radius: 10px;
   color: var(--Light-red);
   font-weight: 700;
+  width: 70%;
 }
 
 .memory {
+  padding: 10px;
   background-color: hsl(39, 100%, 56%, 0.06);
   border-radius: 10px;
   color: var(--Orangey-yellow);
   font-weight: 700;
+  width: 70%;
 }
 
 .verbal {
+  padding: 10px;
   background-color: hsl(166, 100%, 37%, 0.06);
   border-radius: 10px;
   color: var(--Green-teal);
   font-weight: 700;
+  width: 70%;
 }
 
 .visual {
+  padding: 10px;
   background-color: hsl(221, 100%, 96%, 0.9);
   border-radius: 10px;
   color: var(--Cobalt-blue);
   font-weight: 700;
+  width: 70%;
 }
