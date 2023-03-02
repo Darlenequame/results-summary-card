@@ -75,13 +75,13 @@ svg {
 .card2 {
   display: flex;
   flex-flow: column;
-  flex: 1;
-  gap: 1rem;
+  gap: 1.5rem;
   background-color: var(--White);
   border-radius: 30px;
 }
 
 .result-main {
+  margin-bottom: -10px;
   background-color: var(--Light-royal-blue-background);
   display: grid;
   place-content: center;
@@ -130,15 +130,16 @@ svg {
 
 
 .sub-title {
-  margin-bottom: 50px;
+  margin-bottom: -5px;
   font-weight: 700;
   text-align: center;
   color: var(--White);
 }
 
 .sub-text {
+  font-size: 1rem;
   font-weight: 500;
-  margin-bottom: 30px;
+  margin-top: 10px;
   color: var(--Pale-blue);
   text-align: center;
 }
@@ -153,7 +154,7 @@ svg {
 }
 
 .continue {
-  padding: 1.5rem;
+  padding: 1.2rem;
   font-size: 1rem;
   font-weight: 700;
   margin: 2rem;
@@ -162,6 +163,7 @@ svg {
   border-radius: 40px;
   border: none;
   text-align: center;
+  width: 300px;
 }
 
 .continue:hover {
@@ -170,50 +172,57 @@ svg {
 }
 
 .scores {
-  padding-left: 20px;
+  padding-left: 20%;
   font-weight: 700;
   color: var(--Dark-gray-blue);
 }
 
 .score-fade {
   font-weight: 700;
-  color: var(--Light-lavender);
+  color: var(--Dark-gray-blue);
   padding-right: 20%;
 }
 
 .reaction {
+  display: flex;
   padding: 15px;
-  background-color: hsl(0, 100%, 67%, 0.06);
+  background-color: hsl(0, 100%, 67%, 0.066);
   border-radius: 10px;
   color: var(--Light-red);
-  font-weight: 700;
+  font-weight: 800;
   width: 70%;
-  text-align: center;
+  justify-content: space-between;
 }
 
 .memory {
+  display: flex;
   padding: 15px;
   background-color: hsl(39, 100%, 56%, 0.06);
   border-radius: 10px;
   color: var(--Orangey-yellow);
-  font-weight: 700;
+  font-weight: 800;
   width: 70%;
+  justify-content: space-between;
 }
 
 .verbal {
+  display: flex;
   padding: 15px;
   background-color: hsl(166, 100%, 37%, 0.06);
   border-radius: 10px;
   color: var(--Green-teal);
-  font-weight: 700;
+  font-weight: 800;
   width: 70%;
+  justify-content: space-between;
 }
 
 .visual {
+  display: flex;
   padding: 15px;
   background-color: hsl(221, 100%, 96%, 0.9);
   border-radius: 10px;
   color: var(--Cobalt-blue);
-  font-weight: 700;
+  font-weight: 800;
   width: 70%;
+  justify-content: space-between;
 }
